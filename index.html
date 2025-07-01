@@ -1,14 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Daily Journal</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    
+  <header><h1>Daily Journal</h1></header>
+  <main>
+    <section>
+      <h2>Journal Entry</h2>
+      <textarea id="entry" rows="5" placeholder="Write your thoughts..."></textarea>
+      <button onclick="saveEntry()">Save Entry</button>
+    </section>
+
+    <section>
+      <h2>Mood Tracking</h2>
+      <select id="mood">
+        <option>Happy</option>
+        <option>Sad</option>
+        <option>Neutral</option>
+        <option>Anxious</option>
+        <option>Excited</option>
+      </select>
+      <button onclick="trackMood()">Track Mood</button>
+    </section>
+
+    <section>
+      <h2>Analytics</h2>
+      <canvas id="moodChart"></canvas>
+    </section>
+
+    <section>
+      <h2>Reminder</h2>
+      <input type="time" id="reminderTime"/>
+      <button onclick="setReminder()">Set Reminder</button>
+    </section>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>
+
 
 
 

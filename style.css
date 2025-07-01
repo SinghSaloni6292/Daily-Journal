@@ -1,0 +1,42 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f0f0f0;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background: #079beaec;
+  color: rgb(255, 255, 255);
+  padding: 1em;
+  text-align: center;
+}
+main {
+  padding: 1em;
+  max-width: 800px;
+  margin: auto;
+}
+section {
+  background: white;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+textarea, select, input[type="time"] {
+  width: 100%;
+  margin-top: 0.5em;
+  padding: 0.5em;
+}
+button {
+  margin-top: 1em;
+  background: #0787e9d0;
+  color: white;
+  border: none;
+  padding: 0.5em 1em;
+  cursor: pointer;
+}
+canvas {
+  max-width: 100%;
+  margin-top: 1em;
+}
